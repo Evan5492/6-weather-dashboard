@@ -5,15 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard </title>
-    <link rel="stylesheet" href="./assets/style.css"
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <div class="search">
-        <h2>Search for a city:</h2>
-    </div>
     
+   <div class="card">
+     <form id="search">
+        <h1>Search for a City:</h1>
+        <input name="text" placeholder="enter city name">
+        <button type="submit">Search</button>
+    </form>
+   </div> 
+
+   <div id="weather">
+    <h1 id="city">??</h1>
+    <h2 id="temperature">?? degrees</h2>
+    <h2 id="wind-speed">?? mph</h2>
+    <h2 id="humidity">??%</h2>
+
+   </div>
+
+
+  <script src="./assets/main.js"></script>
 </body>
 </html>
